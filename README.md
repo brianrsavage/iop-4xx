@@ -1,9 +1,9 @@
 # iop-4xx
 PRG-160-3485 JavaScript repo for the iop-4xx project 
 	
-	GitHub ages: https://mr0786280.github.io/iop-4xx/
+GitHub Pages: https://mr0786280.github.io/iop-4xx/
 	
-	Development Site: https://iop-4xx.catchthesehands.net/
+Development Site: https://iop-4xx.catchthesehands.net/
 
 Preparing project for development
 
