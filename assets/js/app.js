@@ -40,7 +40,7 @@ function initializeApplication(){
 	elHeader.appendChild(elHeaderTagLine);
 	
 	var elMain = document.createElement('main');
-	elMain.innerHTML = '<p>Hello World!<p/>';
+	elMain.innerHTML = '<p>Hello World!</p>';
 	elWrapper.appendChild(elMain);
 	
 	var elFooter = document.createElement('footer');
