@@ -50,15 +50,7 @@ function initializeApplication(){
 	elHeaderTitle.className = 'animated bounceInDown';
 	elHeaderTagLine.className = 'animated bounceInLeft';
 	elMain.className = 'animated zoomIn';
-	elFooter.className = 'animated bounceInRight';
-	
-	
-	
-	
-	
-	
-	
-	
+	elFooter.className = 'animated bounceInRight';	
 }
 
 
