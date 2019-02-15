@@ -25,7 +25,7 @@ function initializeApplication(){
 	
 	var elWrapper = document.createElement('div');
 	elWrapper.id = 'applicationWrapper';
-	document.bdy.appendChild(elWrapper);
+	document.body.appendChild(elWrapper);
 	
 	var elHeader = document.createElement('header');
 	elWrapper.appendChild(elHeader);
