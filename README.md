@@ -20,7 +20,15 @@ iop version 400.0
 	added base code to the index.html and added initial JavaScript to the app.js file.
 	
 	delete the boilerplate since we're not using it anymore.
+	
+<----->
 
+Extra Credit
+	
+	copied the code from the video (or followed along idk)
+	I made a hex clock
+	
+<----->
 	
 
 
