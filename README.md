@@ -5,6 +5,8 @@ GitHub Pages: https://mr0786280.github.io/iop-4xx/
 	
 Development Site: https://iop-4xx.catchthesehands.net/
 
+Hex Clock Extra Credit: https://iop-4xx.catchthesehands.net/hex%20color%20clock/index.html
+
 Preparing project for development
 
 	- added html5-boilerplate_v6.1.0 files to application
@@ -27,8 +29,6 @@ Extra Credit
 	
 	copied the code from the video (or followed along idk)
 	I made a hex clock
-	
-	Site: https://iop-4xx.catchthesehands.net/hex%20color%20clock/index.html
 	
 <----->
 	
