@@ -22,5 +22,9 @@ iop version 400.0
 	delete the boilerplate since we're not using it anymore.
 
 	
+iop version 401.0
 
+	created the appData object
+	moved the title & tag line variables into appData and refactord the initializeApplcation function
+	
 
