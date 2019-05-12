@@ -1,15 +1,18 @@
 // JavaScript Document
 'use strict';
 
-var applicationTitle = 'iop - javascript';
-
 var applicationTagLine = 'running in faster than the speed of sound!';
+
+var appdata = {
+	title: 'inside out - js',
+	tagLine: 'running in faster than the speed of sound'
+};
 
 window.addEventListener('load', initializeApplication);
 
 function initializeApplication() {
 	
-	document.title = applicationTitle;
+	document.title = appData.title;
 	
 	document.body.style.backgroundColor = '#BBB';
 	document.body.textAlign = 'center';
@@ -23,26 +26,30 @@ function initializeApplication() {
 	elWrapper.appendChild(elHeader);
 	
 	var elHeaderTitle = document.createElement('h1');
-	elHeaderTitle.innerHTML = applicationTitle;
+	elHeaderTitle.innerHTML = appData.title;
 	elHeader.appendChild(elHeaderTitle);
+	elHeaderTitle.className = 'animated fadeInDownBig';
 	
 	var elHeaderTagLine = document.createElement('h2');
-	elHeaderTagLine.textContent = applicationTagLine;
+	elHeaderTagLine.textContent = appdata.tagLine;
 	elHeaderTagLine.style.fontSize = '.8em';
 	elHeader.appendChild(elHeaderTagLine);
+	elHeaderTagLine.className = 'animated lightSpeedIn'; 
 	
 	var elMain = document.createElement('main');
 	elMain.innerHTML = '<p>hello happy world ♡</p>';
 	elWrapper.appendChild(elMain);
+	elMain.className = 'animated zoomInDown';
 	
 	var elFooter  = document.createElement('footer');
 	elFooter.innerHTML = '<h4>have fun learning!! *upbeat music in the background*</h4>';
 	elWrapper.appendChild(elFooter);
+	elFooter.className = 'animated rotateInUpLeft';
 	
 	//I wanted to put in animations I picked from animate.css; I hope that's okay? I also kind of change the words
-	elHeaderTitle.className = 'animated fadeInDownBig';
-	elHeaderTagLine.className = 'animated lightSpeedIn'; 
-	elMain.className = 'animated zoomInDown';
-	elFooter.className = 'animated rotateInUpLeft';
+
+	
+	
+	
 	
 }
