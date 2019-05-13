@@ -50,6 +50,7 @@ function initializeApplication() {
 
 
 var timerCount = 0;
+
 function displayPB() {
     if (timerCount <= 100) {
         var x = (timerCount < 25) ? '' : (timerCount < 45) ? timerCount + '%' : (timerCount < 65) ? 'Loading ' + timerCount + '%' : 'Loading Application ' + timerCount + '%';
@@ -60,10 +61,8 @@ function displayPB() {
         setTimeout(displayPB, 50);
     } else {
         timerCount = 0;
-		
-		document.body.innerHTML = formLogin();
-		
-		return false;
+        document.body.innerHTML = formLogin();
+        return false;
     }
 }
 
@@ -75,7 +74,8 @@ function validateLogin() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("pwd").value;
     if (email !== '' && password !== '') {
-        document.body.innerHTML = '<main class="animated zoomIn"><h1 id="inNow">We are in now</h1></main>';
+        //document.body.innerHTML = '<main class="animated zoomIn"><h1 id="inNow">We are in now</h1></main>';
+        applicationUserInterface();
     } else {
         alert('bad');
     }
@@ -88,7 +88,7 @@ function applicationUserInterface() {
     let footer = '<div class="row"><div class="col-12"><nav id="footer" class="navbar fixed-bottom navbar-dark bg-dark"></nav></div></div></div>';
     document.body.style.backgroundColor = '#FFF';
     document.body.innerHTML = header + main + footer;
-    
+
     var links = document.getElementsByTagName('a');
     for (var i = 0; i < links.length; i++) links[i].onclick = function () {
         linkClicked(this);
@@ -96,7 +96,17 @@ function applicationUserInterface() {
 }
 
 function buildMenu() {
-    return '<nav class="sidebar animated slideInLeft"><ul class="nav flex-column"> <li class="nav-item"> <a class="nav-link active" data-dest="link01" href="#">Active</a> </li><li class="nav-item"> <a class="nav-link" data-dest="link02"  href="#">Link</a> </li><li class="nav-item"> <a class="nav-link" data-dest="link03" href="#">Link</a> </li><li class="nav-item"> <a class="nav-link disabled" data-dest="link04" href="#">Disabled</a> </li></ul></nav>';
+
+    let sm = '<nav class="sidebar animated slideInLeft"><ul class="nav flex-column">';
+
+    for (let i = 0; i < quotArr.length; i++) {
+        sm += '<li class="nav-item"><a class="nav-link active" data-dest="' + i + '" href="#">' + quotArr[i][1].split(",", 1) + '</a></li>';
+    }
+
+    sm += '</ul></nav>';
+    
+    return sm;
+    
 }
 
 function buildMain() {
@@ -105,7 +115,6 @@ function buildMain() {
 
 function linkClicked(obj) {
     console.log(obj.dataset.dest);
-    var str = '<h1 class="animated zoomIn">' + obj.dataset.dest + ' was clicked!</h1>';
-    document.getElementById("main").innerHTML = str.repeat(20);
+    var str = '<div class="infoDiv"><h1 class="animated zoomIn">' + quotArr[obj.dataset.dest][0] + '</h1><div class="animated slideInRight auth">- ' + quotArr[obj.dataset.dest][1] + '</div></div>';
+     document.getElementById("main").innerHTML = str;
 }
-

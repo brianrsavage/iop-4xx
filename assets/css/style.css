@@ -1,4 +1,3 @@
-/* CSS Document */
 nav {
     font-size: 14px;
 }
@@ -30,6 +29,7 @@ h1 {
     font-weight: bold;
     text-align: left;
     background-color: #CCC;
+    margin-bottom: 72px;
 }
 .sidebar ul {
     list-style: none;
@@ -52,6 +52,18 @@ h1 {
 .placeholders {
     padding-bottom: 3rem;
 }
+
+.auth {
+  width: 84%;
+  text-align: right;
+  font-size: .5em;
+  margin: auto;
+}
+
+.infoDiv {
+  margin-top: 20%;
+}
+
 .placeholder img {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -59,48 +71,43 @@ h1 {
 #applicationWrapper {
     padding-top: 150px;
 }
+/* end 403 */
 
-html, body{
-    font-size: 14px;
-}
 
-#loginFrm{
+#loginFrm {
     max-width: 200px;
     margin: 10% auto;
     font-size: 1.0rem;
-    
 }
-
 .form-signin {
-  width: 50%;
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+    width: 50%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
 }
 .form-signin .checkbox {
-  font-weight: 400;
+    font-weight: 400;
 }
 .form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
 }
 .form-signin .form-control:focus {
-  z-index: 2;
+    z-index: 2;
 }
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
-
-#inNow{
+#inNow {
     margin-top: 15%;
 }
