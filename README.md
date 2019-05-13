@@ -39,7 +39,7 @@ iop version 402.0
 	added login form function and call after progress bar is completed
 	added minimal validateLogin function to check for blank strings
 
-inside out project version 403.0
+iop version 403.0
 
 	index.html
 	
