@@ -27,4 +27,9 @@ iop version 401.0
 	created the appData object
 	moved the title & tag line variables into appData and refactord the initializeApplcation function
 	
+iop version 401.1
+
+	added bootstrap to the index.html
+	added a DOM injection of the progress bar in the app.js
+	created the displayPB function in the app.js
 
